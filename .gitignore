@@ -1,0 +1,10 @@
+# Build and runtime files
+/build/
+/data/
+*.o
+*.exe
+*.out
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
