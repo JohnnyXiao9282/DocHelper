@@ -14,6 +14,10 @@ public:
     Document* getDocument(int id);
     std::vector<Document*> searchByTag(const std::string& tag);
     std::vector<Document*> getAllDocuments();
+
+    // Persistence
+    bool saveToDisk(const std::string& dirPath) const;
+    bool loadFromDisk(const std::string& dirPath);
 private:
     std::unordered_map<int, std::unique_ptr<Document>> documents_;
     int nextId_ = 1;
